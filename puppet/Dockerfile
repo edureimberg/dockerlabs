@@ -8,3 +8,4 @@ RUN dpkg -i puppetlabs-release-precise.deb
 RUN apt-get update
 RUN apt-get install -y puppet
 EXPOSE 8140
+ENTRYPOINT [ "/usr/bin/puppet", "master", "--no-daemonize", "--verbose" ]
