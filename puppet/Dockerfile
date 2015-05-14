@@ -2,7 +2,7 @@ FROM ubuntu:precise
 MAINTAINER Eduardo Reimberg "eduardo.reimberg@gmail.com"
 ENV UPDATED_AT 13-05-2015
 RUN apt-get update
-RUN apt-get install -y wget
+RUN apt-get install -y wget git
 RUN wget --no-check-certificate https://apt.puppetlabs.com/puppetlabs-release-precise.deb
 RUN dpkg -i puppetlabs-release-precise.deb
 RUN apt-get update
